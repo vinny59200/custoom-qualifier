@@ -1,6 +1,7 @@
 package com.vv.customqualifier.controller;
 
 import com.vv.customqualifier.domain.MyQualifier;
+import com.vv.customqualifier.domain.ServiceB;
 import com.vv.customqualifier.service.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +13,7 @@ public class MyController {
     private final MyService myService;
 
     @Autowired
-    public MyController(@MyQualifier("MyServiceB") MyService myService ) {
+    public MyController(@ServiceB MyService myService ) {
         this.myService = myService;
     }
 

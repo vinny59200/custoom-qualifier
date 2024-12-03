@@ -1,9 +1,11 @@
 package com.vv.customqualifier.service;
 
 import com.vv.customqualifier.domain.MyQualifier;
+import com.vv.customqualifier.domain.ServiceB;
 import org.springframework.stereotype.Service;
 
-@Service("MyServiceB")
+@Service
+@ServiceB
 public class MyServiceB implements MyService {
     @Override
     public void performTask() {
